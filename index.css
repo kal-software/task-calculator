@@ -1,0 +1,240 @@
+.container {
+  border: 1px solid black;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 300px;
+  margin-top: 80px;
+  margin-left: 300px;
+}
+label {
+  margin-bottom: 10px;
+}
+.question {
+  padding: 1px 4px;
+  border-radius: 180px;
+  border-width: 1px;
+  margin-bottom: 1px;
+}
+.label-annual {
+  font-family: arial;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+}
+.label-extra {
+  font-family: arial;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: -20px;
+}
+.label-age,
+.label-total {
+  font-family: arial;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.input-annual {
+  padding: 5px;
+  width: 270px;
+  /* margin-bottom: 8px;*/
+  position: relative;
+}
+.p {
+  position: absolute;
+  top: 128px;
+  left: 574px;
+}
+.p1 {
+  position: absolute;
+  top: 178px;
+  left: 584px;
+}
+.p2 {
+  position: absolute;
+  top: 289px;
+  left: 584px;
+}
+.p3 {
+  position: absolute;
+  top: 233px;
+  left: 560px;
+}
+.p::after,
+.p::before {
+  position: absolute;
+  left: 100px;
+  transform: translateX(-50%) translateY(-70%);
+}
+.p1::after,
+.p1::before {
+  position: absolute;
+  left: 100px;
+  transform: translateX(-50%) translateY(-70%);
+}
+.p2::after,
+.p2::before {
+  position: absolute;
+  left: 100px;
+  transform: translateX(-50%) translateY(-70%);
+}
+.p3::after,
+.p3::before {
+  position: absolute;
+  left: 100px;
+  transform: translateX(-50%) translateY(-70%);
+}
+.p:hover::before {
+  height: 23px;
+  width: 180px;
+  background-color: rgb(42, 41, 41);
+  content: attr(data-tooltip);
+  color: white;
+  padding: 0.1rem;
+  font-family: arial;
+  font-size: 14px;
+}
+.p1:hover::before {
+  height: 23px;
+  width: 180px;
+  background-color: rgb(42, 41, 41);
+  content: attr(data-tooltip);
+  color: white;
+  padding: 0.1rem;
+  font-family: arial;
+  font-size: 14px;
+}
+.p2:hover::before {
+  height: 23px;
+  width: 180px;
+  background-color: rgb(42, 41, 41);
+  content: attr(data-tooltip);
+  color: white;
+  padding: 0.1rem;
+  font-family: arial;
+  font-size: 14px;
+}
+.p3:hover::before {
+  height: 23px;
+  width: 180px;
+  background-color: rgb(42, 41, 41);
+  content: attr(data-tooltip);
+  color: white;
+  padding: 0.1rem;
+  font-family: arial;
+  font-size: 14px;
+}
+
+.error {
+  padding: 1px 6px;
+  border-radius: 180px;
+  border-width: 1px;
+  position: relative;
+}
+.error1 {
+  padding: 1px 6px;
+  border-radius: 180px;
+  border-width: 1px;
+  position: relative;
+}
+.error2 {
+  padding: 1px 6px;
+  border-radius: 180px;
+  border-width: 1px;
+  position: relative;
+}
+.error3 {
+  padding: 1px 6px;
+  border-radius: 180px;
+  border-width: 1px;
+  position: relative;
+}
+.span2 {
+  position: absolute;
+  left: 100px;
+  top: -10px;
+  transform: translateX(-50%);
+  background-color: grey;
+  width: 180px;
+  color: white;
+  padding-left: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.input-extra {
+  padding: 5px;
+  margin-bottom: 8px;
+  width: 270px;
+}
+.input-age {
+  padding: 5px;
+  margin-bottom: 8px;
+  width: 270px;
+}
+.input-total {
+  padding: 5px;
+  margin-bottom: 8px;
+  width: 270px;
+}
+.submit {
+  padding: 4px 100px;
+  margin-top: 25px;
+  background-color: rgb(0, 55, 255);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-color: grey;
+  width: 150px;
+  color: white;
+  padding-left: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.label-annual:hover .span {
+  top: -600%;
+  left: 230px;
+  visibility: visible;
+  opacity: 1;
+}
+.final-div {
+  border: 1px solid;
+  margin-top: 80px;
+  padding: 35px 100px;
+  width: 330px;
+  margin-left: 280px;
+}
+.total {
+  margin-top: -16px;
+  margin-left: 120px;
+  font-weight: bold;
+  font-family: arial;
+}
+.after-tax {
+  margin-top: -15px;
+  margin-left: 90px;
+  font-family: arial;
+}
+.head {
+  font-size: 25px;
+  font-family: arial;
+}
+.close {
+  margin-left: 130px;
+  margin-top: 30px;
+  background-color: rgb(6, 36, 234);
+  color: white;
+  border: none;
+  padding: 5px 9px;
+  border-radius: 3px;
+}

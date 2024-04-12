@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <label class="label-annual" for="text"
+        >Enter gross annual income <button class="question">?</button
+        ><span class="span"
+          >Gross annual <br />
+          income is your total <br />
+          salary in a year <br />
+          before any <br />
+          deductions</span
+        ></label
+      ><br />
+      <input
+        type="text"
+        placeholder="Enter gross annual income"
+        class="input-annual"
+        size="50"
+        onkeypress="return restrict(event)"
+      />
+      <p class="p" data-tooltip="Please enter numbers only">
+        <button class="error" style="display: none">!</button>
+      </p>
+      <br />
+      <label class="label-extra" for="text"
+        >Enter extra income <button class="question">?</button></label
+      ><br />
+      <input
+        type="text"
+        placeholder="Enter extra income from other sources"
+        class="input-extra"
+        onkeypress="return restricts(event)"
+      />
+      <p class="p1" data-tooltip="Please enter numbers only">
+        <button class="error1" style="display: none">!</button>
+      </p>
+      <br />
+      <label for="text" class="label-age"
+        >Enter age group <button class="question">?</button></label
+      ><br />
+      <input
+        type="number"
+        class="input-age"
+        onkeypress="return ageRestrict(event)"
+      />
+      <p class="p3" data-tooltip="Enter valid age">
+        <button class="error3" style="display: none">!</button>
+      </p>
+      <br />
+      <label class="label-total" for="text"
+        >Enter total applicable deductions
+        <button class="question">?</button></label
+      ><br />
+      <input
+        type="text"
+        placeholder="Add total applicable dedications"
+        class="input-total"
+        onkeypress="return restricts1(event)"
+      />
+      <p class="p2" data-tooltip="Please enter numbers only">
+        <button class="error2" style="display: none">!</button>
+      </p>
+      <br />
+      <button onclick="calculateTotal()" class="submit">Submit</button>
+    </div>
+    <div class="final-div" style="display: none">
+      <h1 class="head">Your overall income will be</h1>
+      <p class="total" onplay="calculateTotal()"></p>
+      <p class="after-tax">after tax deductions</p>
+      <button class="close" onclick="nextPage()">Close</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
